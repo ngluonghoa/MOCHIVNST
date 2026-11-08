@@ -1,0 +1,18 @@
+{
+  "schema": "mochivnst.control-state.v1",
+  "project_id": "MOCHIVNST",
+  "repo": "ngluonghoa/MOCHIVNST",
+  "control_ref": "refs/heads/control/mochivnst-writer-gate",
+  "canonical_docs_gate": "1ZVn9fdqsk-07eT772-bitnwynTBxwvpvqzdldc0bHjM",
+  "main_base_sha": "e6ce562b7de5ef607553ad11e3e192d7e0a0703b",
+  "owner_generation": 1,
+  "control_epoch": 0,
+  "state": "FROZEN",
+  "holder_session_id": null,
+  "work_item": null,
+  "expires_at_utc": null,
+  "activation": "NOT_ACTIVE",
+  "enforcement": "BOOTSTRAP_ONLY_UNPROTECTED",
+  "permit_write": false,
+  "note": "This record MUST NOT authorize any write until branch is protected, distinct writer credentials/gateway are enforced and GOV negative drills pass. Docs owner and scoped lease stay canonical during bootstrap."
+}

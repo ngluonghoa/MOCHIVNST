@@ -15,7 +15,7 @@ class TestGovernanceBootstrap(unittest.TestCase):
     def test_readme_has_canonical_governance_reference(self):
         text = README.read_text(encoding="utf-8")
         self.assertIn("MOCHIVNST", text)
-        self.assertIn("04_ACTIVE_SESSION_GATE", text)
+        self.assertIn("Canonical gate: https://docs.google.com/document/d/", text)
         self.assertIn("P0 not yet enforced", text)
 
     def test_workflow_uses_read_only_token(self):
@@ -32,8 +32,8 @@ class TestGovernanceBootstrap(unittest.TestCase):
 
     def test_workflow_pins_actions_and_test_versions(self):
         text = WORKFLOW.read_text(encoding="utf-8")
-        self.assertIn("actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683", text)
-        self.assertIn("actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065", text)
+        self.assertIn("actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09", text)
+        self.assertIn("actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1", text)
         self.assertIn('python-version: ["3.11", "3.12"]', text)
 
 
